@@ -22,10 +22,10 @@ export function Stats() {
             <span className="text-xs uppercase tracking-widest text-muted-foreground">Статистика</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-5">
-            Цифры, которые <span className="gradient-text">говорят за нас</span>
+            Проект в <span className="gradient-text">цифрах</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            За годы работы мы помогли тысячам путешественников открыть настоящую Мексику.
+            Открытая статистика Travel Radar LK AI — материалы, форматы и каналы, где мы рассказываем о Мексике.
           </p>
         </div>
 
