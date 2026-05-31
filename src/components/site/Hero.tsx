@@ -63,9 +63,9 @@ export function Hero() {
         {/* Floating glass info card */}
         <div className="mt-20 hidden md:flex justify-center gap-4 animate-[fade-up_1.4s_ease-out]">
           {[
-            { k: "0%", v: "комиссий и продаж" },
-            { k: "7 лет", v: "опыта в Мексике" },
-            { k: "AI", v: "анализ под ваш бюджет" },
+            { k: "50+", v: "материалов" },
+            { k: "80+", v: "коротких видео" },
+            { k: "24/7", v: "AI-консультант" },
           ].map((s) => (
             <div key={s.v} className="glass rounded-2xl px-6 py-4 min-w-[140px]">
               <div className="text-2xl font-bold gradient-text font-display">{s.k}</div>
