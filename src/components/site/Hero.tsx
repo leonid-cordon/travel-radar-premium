@@ -28,18 +28,19 @@ export function Hero() {
             <span className="relative inline-flex rounded-full h-2 w-2 bg-secondary" />
           </span>
           <span className="text-xs text-foreground/90 tracking-wide">
-            <MapPin className="inline w-3 h-3 mr-1" /> Мексика · AI-консультант 24/7
+            <MapPin className="inline w-3 h-3 mr-1" /> Независимый экспертный проект о Мексике
           </span>
         </div>
 
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-[1.05] animate-[fade-up_0.8s_ease-out]">
-          Путешествия по Мексике{" "}
-          <span className="gradient-text">нового поколения</span>
+          Мексика без{" "}
+          <span className="gradient-text">дорогих ошибок</span>
         </h1>
 
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-[fade-up_1s_ease-out]">
-          Travel Radar LK AI — премиальная платформа, объединяющая искусственный интеллект
-          и личный опыт для создания идеального маршрута по самой яркой стране Латинской Америки.
+          Travel Radar LK AI — экспертная помощь в выборе курорта, отеля и планировании поездки.
+          Мы не продаём туры и не берём комиссий с бронирований: только честные рекомендации,
+          основанные на личном опыте жизни в стране и анализе данных с помощью AI.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-[fade-up_1.2s_ease-out]">
@@ -48,23 +49,23 @@ export function Hero() {
             className="group inline-flex items-center gap-2 px-7 py-4 rounded-2xl gradient-hero text-primary-foreground font-semibold shadow-glow hover:shadow-glow-cool transition-all hover:scale-105"
           >
             <Sparkles className="w-5 h-5" />
-            Спросить AI-консультанта
+            Подобрать курорт и отель
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </a>
           <a
             href="#about"
             className="inline-flex items-center gap-2 px-7 py-4 rounded-2xl glass text-foreground font-medium hover:bg-white/10 transition-colors"
           >
-            Узнать больше
+            Как это работает
           </a>
         </div>
 
         {/* Floating glass info card */}
         <div className="mt-20 hidden md:flex justify-center gap-4 animate-[fade-up_1.4s_ease-out]">
           {[
-            { k: "32", v: "штата" },
-            { k: "150+", v: "маршрутов" },
-            { k: "24/7", v: "AI-поддержка" },
+            { k: "0%", v: "комиссий и продаж" },
+            { k: "7 лет", v: "опыта в Мексике" },
+            { k: "AI", v: "анализ под ваш бюджет" },
           ].map((s) => (
             <div key={s.v} className="glass rounded-2xl px-6 py-4 min-w-[140px]">
               <div className="text-2xl font-bold gradient-text font-display">{s.k}</div>
