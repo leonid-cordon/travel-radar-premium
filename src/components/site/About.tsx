@@ -20,8 +20,8 @@ export function About() {
           {/* Floating glass badge */}
           <div className="absolute -bottom-6 -right-6 glass-strong rounded-2xl p-5 shadow-elegant max-w-[220px]">
             <Compass className="w-6 h-6 text-secondary mb-2" />
-            <div className="text-sm font-semibold">Авторский подход</div>
-            <div className="text-xs text-muted-foreground mt-1">Маршруты, которых нет в путеводителях</div>
+            <div className="text-sm font-semibold">Независимый источник</div>
+            <div className="text-xs text-muted-foreground mt-1">Без рекламы туроператоров и продажи туров</div>
           </div>
         </div>
 
@@ -31,24 +31,25 @@ export function About() {
             <span className="text-xs uppercase tracking-widest text-muted-foreground">О проекте</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-            Мексика глазами <span className="gradient-text">эксперта и AI</span>
+            Помогаем принимать <span className="gradient-text">правильные решения</span> о поездке в Мексику
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-            Travel Radar LK AI — независимый экспертный проект о Мексике. Мы объединяем
-            многолетний опыт жизни в стране и возможности нейросетей, чтобы помочь
-            читателям спланировать поездку без дорогих ошибок: выбрать подходящий курорт,
-            отель и формат путешествия.
+            Travel Radar LK — независимый проект о путешествиях по Мексике. Мы помогаем
+            выбрать курорт, район и отель, спланировать маршрут и избежать типичных ошибок,
+            из-за которых поездка превращается в разочарование или лишние расходы.
           </p>
           <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-            Проект не продаёт туры и не оказывает услуг бронирования. Некоторые материалы
-            могут содержать партнёрские ссылки на проверенные сервисы бронирования —
-            это помогает поддерживать развитие проекта и не влияет на стоимость для вас.
+            Мы не продаём туры и не оказываем услуг бронирования — наша задача дать честную
+            и понятную информацию, чтобы вы могли принять решение самостоятельно. AI-консультант
+            — это дополнительный инструмент, который ускоряет поиск ответов по нашим материалам.
+            Некоторые статьи могут содержать партнёрские ссылки на проверенные сервисы — это
+            помогает поддерживать проект и не влияет на стоимость для вас.
           </p>
 
           <div className="grid grid-cols-2 gap-4">
             {[
-              { t: "Локальная экспертиза", d: "Авторы живут в Мексике" },
-              { t: "AI-персонализация", d: "Маршрут под ваш стиль" },
+              { t: "Решения без ошибок", d: "Курорт, район и отель под ваши задачи" },
+              { t: "Независимая позиция", d: "Не продаём туры и не работаем за рекламу" },
             ].map((i) => (
               <div key={i.t} className="glass rounded-2xl p-5">
                 <div className="font-semibold mb-1">{i.t}</div>
