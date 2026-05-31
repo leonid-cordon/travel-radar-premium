@@ -69,18 +69,18 @@ export function AIConsultant() {
             <div className="space-y-3 mb-5 min-h-[280px]">
               <div className="flex justify-end">
                 <div className="gradient-hero text-primary-foreground rounded-2xl rounded-tr-md px-4 py-2.5 max-w-[80%] text-sm shadow-glow">
-                  Хочу 7 дней по Юкатану с сенотами и пляжами
+                  В каком районе лучше остановиться в Канкуне?
                 </div>
               </div>
               <div className="flex">
                 <div className="glass rounded-2xl rounded-tl-md px-4 py-3 max-w-[85%] text-sm">
-                  <div className="font-semibold mb-2 gradient-text">Отличный выбор! Вот идеальный маршрут:</div>
+                  <div className="font-semibold mb-2 gradient-text">Коротко по районам Hotel Zone:</div>
                   <ul className="space-y-1.5 text-foreground/90 text-[13px]">
-                    <li>📍 День 1–2: Канкун → Плайя-дель-Кармен</li>
-                    <li>🌊 День 3: Сеноты Дос Охос и Грэн Сенот</li>
-                    <li>🏛 День 4: Чичен-Ица и Вальядолид</li>
-                    <li>🏖 День 5–6: Тулум, пляж и руины</li>
-                    <li>🐢 День 7: Акумаль — плавание с черепахами</li>
+                    <li>📍 km 1–4: ближе к центру, дешевле, узкий пляж</li>
+                    <li>🏖 km 9–14: широкие пляжи, спокойное море, семьи</li>
+                    <li>🌊 km 15–20: открытый океан, волны, молодёжь и пати</li>
+                    <li>🏙 Downtown: бюджетно, аутентично, без пляжа рядом</li>
+                    <li>💡 Совет: для первого раза — km 9–14</li>
                   </ul>
                 </div>
               </div>
