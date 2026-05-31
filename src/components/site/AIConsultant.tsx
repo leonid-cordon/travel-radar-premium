@@ -2,10 +2,12 @@ import { Send, Sparkles, Bot } from "lucide-react";
 import cenoteImg from "@/assets/mexico-cenote.jpg";
 
 const examples = [
-  "Куда поехать в Мексике в феврале?",
-  "Маршрут на 10 дней по Юкатану",
-  "Лучшие сеноты рядом с Тулумом",
-  "Бюджет на поездку в Мехико",
+  "Что выбрать для первого отдыха: Канкун или Ривьера Майя?",
+  "В каком районе лучше остановиться в Канкуне?",
+  "Какой курорт подойдёт для спокойного отдыха?",
+  "Как выбрать отель и не переплатить?",
+  "Нужна ли eSIM для поездки в Мексику?",
+  "Как добраться из аэропорта Канкуна?",
 ];
 
 export function AIConsultant() {
@@ -15,14 +17,15 @@ export function AIConsultant() {
         <div>
           <div className="inline-flex items-center gap-2 glass rounded-full px-3 py-1 mb-6">
             <Sparkles className="w-3 h-3 text-primary" />
-            <span className="text-xs uppercase tracking-widest text-muted-foreground">AI-консультант</span>
+            <span className="text-xs uppercase tracking-widest text-muted-foreground">AI-эксперт по Мексике</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-            Спросите AI — <span className="gradient-text">получите ответ за секунды</span>
+            Специализированный AI — <span className="gradient-text">только про Мексику</span>
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-            Наш AI-консультант обучен на тысячах авторских материалов о Мексике.
-            Он знает всё: от лучшего тако в Оахаке до сроков сезона китов в Бахе Калифорния.
+            AI-консультант обучен на материалах Travel Radar LK: статьях, гайдах и коротких видео
+            о курортах, отелях, районах, транспорте и практических нюансах поездки. Он помогает
+            быстро находить нужную информацию по Мексике — без рекламы и без воды.
           </p>
 
           <div className="space-y-2 mb-8">
