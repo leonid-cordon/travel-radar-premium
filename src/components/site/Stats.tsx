@@ -1,10 +1,10 @@
 import pyramidImg from "@/assets/mexico-pyramid.jpg";
 
 const stats = [
-  { k: "50K+", v: "путешественников", d: "доверили нам маршрут" },
-  { k: "150+", v: "уникальных мест", d: "от пляжей до пирамид" },
-  { k: "98%", v: "довольных клиентов", d: "возвращаются за новым маршрутом" },
-  { k: "24/7", v: "AI-поддержка", d: "ответ за секунды на любом языке" },
+  { k: "50+", v: "материалов", d: "статей и гайдов о Мексике" },
+  { k: "80+", v: "коротких видео", d: "Reels, Shorts и TikTok" },
+  { k: "5", v: "платформ", d: "сайт, Telegram, YouTube, Pinterest, Instagram/TikTok" },
+  { k: "24/7", v: "AI-консультант", d: "ответ на ваш вопрос в любое время" },
 ];
 
 export function Stats() {
@@ -22,10 +22,10 @@ export function Stats() {
             <span className="text-xs uppercase tracking-widest text-muted-foreground">Статистика</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-5">
-            Цифры, которые <span className="gradient-text">говорят за нас</span>
+            Проект в <span className="gradient-text">цифрах</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            За годы работы мы помогли тысячам путешественников открыть настоящую Мексику.
+            Открытая статистика Travel Radar LK AI — материалы, форматы и каналы, где мы рассказываем о Мексике.
           </p>
         </div>
 

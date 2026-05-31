@@ -22,7 +22,7 @@ export function Features() {
             Почему выбирают <span className="gradient-text">Travel Radar</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            Шесть причин, по которым тысячи путешественников доверяют нам планирование своих приключений.
+            Что отличает независимый экспертный проект о Мексике от обычных туристических ресурсов.
           </p>
         </div>
 

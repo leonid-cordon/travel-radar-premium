@@ -38,9 +38,9 @@ export function Hero() {
         </h1>
 
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-[fade-up_1s_ease-out]">
-          Travel Radar LK AI — экспертная помощь в выборе курорта, отеля и планировании поездки.
-          Мы не продаём туры и не берём комиссий с бронирований: только честные рекомендации,
-          основанные на личном опыте жизни в стране и анализе данных с помощью AI.
+          Travel Radar LK AI — независимый экспертный проект о Мексике. Помогаем выбрать курорт,
+          отель и спланировать поездку без дорогих ошибок, опираясь на личный опыт жизни в стране
+          и AI-анализ данных.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-[fade-up_1.2s_ease-out]">
@@ -63,9 +63,9 @@ export function Hero() {
         {/* Floating glass info card */}
         <div className="mt-20 hidden md:flex justify-center gap-4 animate-[fade-up_1.4s_ease-out]">
           {[
-            { k: "0%", v: "комиссий и продаж" },
-            { k: "7 лет", v: "опыта в Мексике" },
-            { k: "AI", v: "анализ под ваш бюджет" },
+            { k: "50+", v: "материалов" },
+            { k: "80+", v: "коротких видео" },
+            { k: "24/7", v: "AI-консультант" },
           ].map((s) => (
             <div key={s.v} className="glass rounded-2xl px-6 py-4 min-w-[140px]">
               <div className="text-2xl font-bold gradient-text font-display">{s.k}</div>
