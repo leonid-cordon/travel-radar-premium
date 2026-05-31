@@ -2,10 +2,12 @@ import { Send, Sparkles, Bot } from "lucide-react";
 import cenoteImg from "@/assets/mexico-cenote.jpg";
 
 const examples = [
-  "Куда поехать в Мексике в феврале?",
-  "Маршрут на 10 дней по Юкатану",
-  "Лучшие сеноты рядом с Тулумом",
-  "Бюджет на поездку в Мехико",
+  "Что выбрать для первого отдыха: Канкун или Ривьера Майя?",
+  "В каком районе лучше остановиться в Канкуне?",
+  "Какой курорт подойдёт для спокойного отдыха?",
+  "Как выбрать отель и не переплатить?",
+  "Нужна ли eSIM для поездки в Мексику?",
+  "Как добраться из аэропорта Канкуна?",
 ];
 
 export function AIConsultant() {
@@ -15,14 +17,15 @@ export function AIConsultant() {
         <div>
           <div className="inline-flex items-center gap-2 glass rounded-full px-3 py-1 mb-6">
             <Sparkles className="w-3 h-3 text-primary" />
-            <span className="text-xs uppercase tracking-widest text-muted-foreground">AI-консультант</span>
+            <span className="text-xs uppercase tracking-widest text-muted-foreground">AI-эксперт по Мексике</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-            Спросите AI — <span className="gradient-text">получите ответ за секунды</span>
+            Специализированный AI — <span className="gradient-text">только про Мексику</span>
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-            Наш AI-консультант обучен на тысячах авторских материалов о Мексике.
-            Он знает всё: от лучшего тако в Оахаке до сроков сезона китов в Бахе Калифорния.
+            AI-консультант обучен на материалах Travel Radar LK: статьях, гайдах и коротких видео
+            о курортах, отелях, районах, транспорте и практических нюансах поездки. Он помогает
+            быстро находить нужную информацию по Мексике — без рекламы и без воды.
           </p>
 
           <div className="space-y-2 mb-8">
@@ -66,18 +69,18 @@ export function AIConsultant() {
             <div className="space-y-3 mb-5 min-h-[280px]">
               <div className="flex justify-end">
                 <div className="gradient-hero text-primary-foreground rounded-2xl rounded-tr-md px-4 py-2.5 max-w-[80%] text-sm shadow-glow">
-                  Хочу 7 дней по Юкатану с сенотами и пляжами
+                  В каком районе лучше остановиться в Канкуне?
                 </div>
               </div>
               <div className="flex">
                 <div className="glass rounded-2xl rounded-tl-md px-4 py-3 max-w-[85%] text-sm">
-                  <div className="font-semibold mb-2 gradient-text">Отличный выбор! Вот идеальный маршрут:</div>
+                  <div className="font-semibold mb-2 gradient-text">Коротко по районам Hotel Zone:</div>
                   <ul className="space-y-1.5 text-foreground/90 text-[13px]">
-                    <li>📍 День 1–2: Канкун → Плайя-дель-Кармен</li>
-                    <li>🌊 День 3: Сеноты Дос Охос и Грэн Сенот</li>
-                    <li>🏛 День 4: Чичен-Ица и Вальядолид</li>
-                    <li>🏖 День 5–6: Тулум, пляж и руины</li>
-                    <li>🐢 День 7: Акумаль — плавание с черепахами</li>
+                    <li>📍 km 1–4: ближе к центру, дешевле, узкий пляж</li>
+                    <li>🏖 km 9–14: широкие пляжи, спокойное море, семьи</li>
+                    <li>🌊 km 15–20: открытый океан, волны, молодёжь и пати</li>
+                    <li>🏙 Downtown: бюджетно, аутентично, без пляжа рядом</li>
+                    <li>💡 Совет: для первого раза — km 9–14</li>
                   </ul>
                 </div>
               </div>
