@@ -18,10 +18,10 @@ export function About() {
             />
           </div>
           {/* Floating glass badge */}
-          <div className="absolute -bottom-6 -right-6 glass-strong rounded-2xl p-5 shadow-elegant max-w-[240px]">
+          <div className="absolute -bottom-6 -right-6 glass-strong rounded-2xl p-5 shadow-elegant max-w-[260px]">
             <Compass className="w-6 h-6 text-secondary mb-2" />
             <div className="text-sm font-semibold">Независимый подход</div>
-            <div className="text-xs text-muted-foreground mt-1">Анализируем и сравниваем на основе собственного опыта жизни в Мексике</div>
+            <div className="text-xs text-muted-foreground mt-1">Сравниваем курорты, отели и маршруты на основе практического опыта и проверки открытых источников</div>
           </div>
         </div>
 
