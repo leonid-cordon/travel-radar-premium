@@ -38,9 +38,7 @@ export function Hero() {
         </h1>
 
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-[fade-up_1s_ease-out]">
-          Travel Radar LK AI — независимый экспертный проект о Мексике. Помогаем выбрать курорт,
-          отель и спланировать поездку без дорогих ошибок, опираясь на личный опыт жизни в стране
-          и AI-анализ данных.
+          Travel Radar LK AI — экспертная помощь в выборе курорта, отеля и планировании поездки по Мексике. Помогаем принимать более уверенные решения на основе практического опыта путешествий, материалов проекта и AI-инструментов.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-[fade-up_1.2s_ease-out]">
