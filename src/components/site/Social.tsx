@@ -1,10 +1,54 @@
-import { Instagram, Youtube, Send, MessageCircle } from "lucide-react";
+import { Globe, Youtube, Image, Send, Instagram, MessageCircle } from "lucide-react";
 
-const socials = [
-  { icon: Instagram, name: "Instagram", handle: "@travelradar.lk", followers: "82K", color: "from-pink-500 to-orange-400" },
-  { icon: Youtube, name: "YouTube", handle: "Travel Radar LK", followers: "45K", color: "from-red-500 to-rose-400" },
-  { icon: Send, name: "Telegram", handle: "@travelradar_mx", followers: "28K", color: "from-sky-400 to-blue-500" },
-  { icon: MessageCircle, name: "TikTok", handle: "@travelradar.lk", followers: "120K", color: "from-fuchsia-500 to-cyan-400" },
+const platforms = [
+  {
+    icon: Globe,
+    name: "Сайт",
+    description: "Основной источник информации о Мексике: статьи, гайды и обзоры.",
+    url: "https://travelradarlk.com",
+    color: "from-emerald-400 to-teal-500",
+    active: true,
+  },
+  {
+    icon: Youtube,
+    name: "YouTube",
+    description: "Видео о курортах, отелях, путешествиях и практических советах по Мексике.",
+    url: "https://www.youtube.com/@travel_radar_lk",
+    color: "from-red-500 to-rose-400",
+    active: true,
+  },
+  {
+    icon: Image,
+    name: "Pinterest",
+    description: "Визуальные подборки мест, маршрутов и идей для поездок.",
+    url: "#",
+    color: "from-rose-400 to-red-500",
+    active: false,
+  },
+  {
+    icon: Send,
+    name: "Telegram",
+    description: "Дополнительные материалы и обновления проекта на русском языке.",
+    url: "https://t.me/TravelRadar_LK",
+    color: "from-sky-400 to-blue-500",
+    active: true,
+  },
+  {
+    icon: Instagram,
+    name: "Instagram",
+    description: "Визуальный контент и вдохновение для путешествий.",
+    url: "https://www.instagram.com/travelradarlk/",
+    color: "from-pink-500 to-orange-400",
+    active: true,
+  },
+  {
+    icon: MessageCircle,
+    name: "TikTok",
+    description: "Короткие видео и быстрые советы.",
+    url: "https://www.tiktok.com/@travelradarlk",
+    color: "from-fuchsia-500 to-cyan-400",
+    active: true,
+  },
 ];
 
 export function Social() {
@@ -14,37 +58,64 @@ export function Social() {
         <div className="text-center max-w-2xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 glass rounded-full px-3 py-1 mb-6">
             <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-            <span className="text-xs uppercase tracking-widest text-muted-foreground">Социальные сети</span>
+            <span className="text-xs uppercase tracking-widest text-muted-foreground">
+              Экосистема проекта
+            </span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-5">
-            Следите за нами <span className="gradient-text">в реальном времени</span>
+            Площадки <span className="gradient-text">Travel Radar LK</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            Ежедневные истории из путешествий, гайды и закрытые рекомендации.
+            Выбирайте удобный формат контента и следите за обновлениями там, где вам комфортно.
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {socials.map((s) => (
-            <a
-              key={s.name}
-              href="#"
-              className="group glass rounded-3xl p-6 hover:bg-white/[0.09] transition-all hover:-translate-y-1 relative overflow-hidden"
-            >
-              <div className={`absolute -top-16 -right-16 w-40 h-40 rounded-full bg-gradient-to-br ${s.color} opacity-20 group-hover:opacity-40 blur-2xl transition-opacity`} />
-              <div className="relative">
-                <div className={`w-12 h-12 rounded-2xl bg-gradient-to-br ${s.color} flex items-center justify-center mb-4 shadow-elegant`}>
-                  <s.icon className="w-6 h-6 text-white" strokeWidth={2} />
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {platforms.map((p) => {
+            const CardContent = (
+              <>
+                <div
+                  className={`absolute -top-16 -right-16 w-40 h-40 rounded-full bg-gradient-to-br ${p.color} opacity-20 group-hover:opacity-40 blur-2xl transition-opacity`}
+                />
+                <div className="relative flex flex-col h-full">
+                  <div
+                    className={`w-12 h-12 rounded-2xl bg-gradient-to-br ${p.color} flex items-center justify-center mb-5 shadow-elegant`}
+                  >
+                    <p.icon className="w-6 h-6 text-white" strokeWidth={2} />
+                  </div>
+                  <div className="text-lg font-semibold mb-2">{p.name}</div>
+                  <p className="text-sm text-muted-foreground leading-relaxed flex-grow">
+                    {p.description}
+                  </p>
+                  {!p.active && (
+                    <div className="mt-4 inline-flex items-center gap-1.5 self-start rounded-full bg-muted/50 px-2.5 py-1 text-xs text-muted-foreground">
+                      <span className="w-1 h-1 rounded-full bg-muted-foreground" />
+                      Скоро
+                    </div>
+                  )}
                 </div>
-                <div className="text-lg font-semibold mb-1">{s.name}</div>
-                <div className="text-sm text-muted-foreground mb-4">{s.handle}</div>
-                <div className="flex items-baseline gap-1.5">
-                  <span className="text-2xl font-bold gradient-text font-display">{s.followers}</span>
-                  <span className="text-xs text-muted-foreground">подписчиков</span>
-                </div>
+              </>
+            );
+
+            return p.active ? (
+              <a
+                key={p.name}
+                href={p.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group glass rounded-3xl p-6 hover:bg-white/[0.09] transition-all hover:-translate-y-1 relative overflow-hidden flex flex-col"
+              >
+                {CardContent}
+              </a>
+            ) : (
+              <div
+                key={p.name}
+                className="group glass rounded-3xl p-6 relative overflow-hidden flex flex-col opacity-70"
+              >
+                {CardContent}
               </div>
-            </a>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
