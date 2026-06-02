@@ -21,9 +21,9 @@ const platforms = [
     icon: Image,
     name: "Pinterest",
     description: "Визуальные подборки мест, маршрутов и идей для поездок.",
-    url: "#",
+    url: "https://www.pinterest.com/travelradarlk/",
     color: "from-rose-400 to-red-500",
-    active: false,
+    active: true,
   },
   {
     icon: Send,
